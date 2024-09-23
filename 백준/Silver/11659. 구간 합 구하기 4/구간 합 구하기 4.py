@@ -33,4 +33,4 @@ for _ in range(M):
     
     elif i == 0:
         numbers = S[j]
-        print(numbers)
+        print(numbers) 
