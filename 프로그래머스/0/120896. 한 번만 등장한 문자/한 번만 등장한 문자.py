@@ -21,13 +21,13 @@ def solution(s):
         #문자(c) 개수 카운팅
         dict_[c] += 1
     #value가 1인 key탐색
-    for key,value in dict_.items():
+    for key,value in sorted(dict_.items()):
         if value == 1:
             answer += key
     #문자열 정렬
     #정렬함수 sorted() 활용
     #sorted(컨테이너 자료형)는 정렬된 리스트를 반환
-    answer = sorted(answer)
+    #answer = sorted(answer)
     #리스트->문자열로 형변환
     #join() 매서드 활용
     #''.join(리스트) : 리스트의 각원소를 연결해서 문자열을 생성
